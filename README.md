@@ -20,4 +20,29 @@ TypeScript: Adds static typing to JavaScript, improving code maintainability.
 
 WebSocket: Enables real-time, bidirectional communication between clients.
 
-CSS/SCSS: For styling the application.
+tailwind : For styling the application.
+
+
+WebSocket Communication
+
+The application uses WebSocket for real-time communication between players. Here's a brief overview of the WebSocket protocol in this project:
+
+Server-Side
+
+The WebSocket server listens for player connections.
+
+It handles messages such as:
+
+Player move: When a player makes a move, the server broadcasts the move to the other player.
+
+Game state update: Keeps both players' game states synchronized.
+
+Client-Side
+
+A WebSocket connection is established when the app loads.
+
+The client sends and receives messages related to:
+
+Player moves
+
+Game status (e.g., checkmate, stalemate)
